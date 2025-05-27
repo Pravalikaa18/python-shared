@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'pravalikaa18/my-python-app:latest'
+        IMAGE = 'pravalikaa18/my-python-app1:latest'
     }
     stages {
         stage('Build') {
