@@ -6,7 +6,7 @@ COPY . /app
 
 # Clone sharedlib if not using pip from Git
 RUN git clone https://github.com/pravalikaa18/shared-library.git && \
-    pip install ./sharedlibrary
+    pip install ./shared-library
 
 RUN pip install -r requirements.txt
 
