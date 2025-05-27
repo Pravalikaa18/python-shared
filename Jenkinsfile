@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE = 'pravalikaa18/my-python-app1:latest'
+        IMAGE = 'pravalikaa18/my-python-app2:latest'
     }
     stages {
         stage('Build') {
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy to K8s') {
             steps {
-                withCredentials([file(credentialsId: 'Kubeconfig', variable: 'KUBECONFIG_FILE')]) {
+                withCredentials([file(credentialsId: 'Kubeconfig', variable: 'KUBECONFIG')]) {
                     sh '''
                     export KUBECONFIG=$KUBECONFIG_FILE
                     kubectl apply -f k8s-deployment.yaml
