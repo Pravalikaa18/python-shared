@@ -5,8 +5,8 @@ WORKDIR /app
 COPY . /app
 
 # Clone sharedlib if not using pip from Git
-RUN git clone https://github.com/pravalikaa18/sharedlib.git && \
-    pip install ./sharedlib
+RUN git clone https://github.com/pravalikaa18/shared-library.git && \
+    pip install ./sharedlibrary
 
 RUN pip install -r requirements.txt
 
