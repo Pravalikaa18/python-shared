@@ -1,1 +1,2 @@
-git+https://github.com/Pravalikaa18/shared-library.git
+# requirements.txt
+git+https://github.com/pravalikaa18/shared-library.git@main
